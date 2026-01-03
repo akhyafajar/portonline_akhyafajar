@@ -1,43 +1,53 @@
-/* ===== JUMBOTRON ===== */
+/* =========================
+   JUMBOTRON (FIX TOTAL)
+========================= */
 .jumbotron {
   padding-top: 6rem; /* aman dari navbar fixed-top */
   background-color: #00000069;
+  position: relative;
 }
 
+/* SVG WAVE FIX (INI PENTING) */
+.jumbotron svg {
+  display: block;       /* HILANGIN GAP BAWAH */
+  margin-bottom: -1px;  /* NYATU KE SECTION BAWAH */
+}
+
+/* Image sedikit dipertegas, TIDAK NGUBAH LAYOUT */
 .jumbotron img {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-.jumbotron h1 {
-  margin-top: 1rem;
-  font-weight: 600;
-}
-
-/* ===== SECTION SPACING ===== */
+/* =========================
+   SECTION SPACING NORMAL
+========================= */
 #About,
 #Project,
 #Contact {
   padding: 5rem 0;
 }
 
-/* ===== PROJECT CARD ===== */
-.card {
-  border: none;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== PROJECT BACKGROUND ===== */
+/* =========================
+   PROJECT
+========================= */
 #Project {
   background-color: #00000069;
 }
 
-/* ===== FOOTER ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
   background-color: #000000c9;
   color: #ffffff;
