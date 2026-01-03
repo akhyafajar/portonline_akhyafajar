@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000c9">
       <div class="container">
-        <a class="navbar-brand" href="#">Muhammad Akhya Fajar</a>
+        <a class="navbar-brand" href="#home">Muhammad Akhya Fajar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,8 +44,8 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/Fajarbulat.jpg" alt="Muhammad Akhya Fajar" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Muhammad Akhya Fajar</h1>
-      <p class="lead">Mahasiswa TIK Universitas Brawijaya</p>
+      <h1 class="display-4">Muhammad Akhya Fajar A.Md.Kom</h1>
+      <p class="lead">Teknologi Informasi dan Komputer Universitas Brawijaya</p>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -155,45 +155,73 @@
     <!-- Akhir Project -->
 
     <!-- Contact -->
-    <section id="Contact">
+    <section id="contact" class="py-5">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
             <h2>Contact Me</h2>
+            <p class="text-muted">Silakan hubungi saya melalui form di bawah ini</p>
           </div>
         </div>
+
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+
+            <form action="https://formspree.io/f/xyzzabcd" method="POST">
+          
+              <!-- Nama -->
               <div class="mb-3">
-                <label for="Name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="Name" aria-describedby="Name" />
-                <div id="Name" class="form-text">Dilarang menggunakan Nama inisial</div>
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Masukkan nama lengkap"
+                  required
+                />
               </div>
 
+              <!-- Email -->
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-                <div id="emailHelp" class="form-text">Harap menggunakan email Aktif</div>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="emailaktif@email.com"
+                  required
+                />
               </div>
+
+              <!-- Pesan -->
               <div class="mb-3">
-                <label for="Pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3"></textarea>
-                <div id="pesan" class="form-text">Harap mengisi pesan</div>
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tulis pesan kamu di sini..."
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+
+              <!-- Button -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">
+                  Kirim Pesan
+                </button>
+              </div>
+
             </form>
+
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#00000069"
-          fill-opacity="0.8"
-          d="M0,0L24,37.3C48,75,96,149,144,186.7C192,224,240,224,288,186.7C336,149,384,75,432,80C480,85,528,171,576,176C624,181,672,107,720,69.3C768,32,816,32,864,32C912,32,960,32,1008,53.3C1056,75,1104,117,1152,144C1200,171,1248,181,1296,170.7C1344,160,1392,128,1416,112L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
-        ></path>
-      </svg>
     </section>
+
     <!-- Akhir Contact -->
 
     <!-- Footer -->
