@@ -1,30 +1,51 @@
 /* =========================
-   JUMBOTRON (FIX TOTAL)
+   GLOBAL RESET KECIL
+========================= */
+body {
+  overflow-x: hidden; /* PENTING: cegah scroll horizontal */
+}
+
+/* =========================
+   JUMBOTRON (FIX FULL WIDTH)
 ========================= */
 .jumbotron {
-  padding-top: 6rem; /* aman dari navbar fixed-top */
+  padding-top: 6rem;
   background-color: #00000069;
   position: relative;
+  overflow: hidden; /* POTONG SVG YANG KELUAR */
 }
 
-/* SVG WAVE FIX (INI PENTING) */
+/* SVG FULL LAYAR */
 .jumbotron svg {
-  display: block;       /* HILANGIN GAP BAWAH */
-  margin-bottom: -1px;  /* NYATU KE SECTION BAWAH */
+  display: block;
+  width: 100vw;              /* FULL LAYAR */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;        /* TRIK PALING PENTING */
+  margin-right: -50vw;
 }
 
-/* Image sedikit dipertegas, TIDAK NGUBAH LAYOUT */
+/* IMAGE */
 .jumbotron img {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* =========================
-   SECTION SPACING NORMAL
+   ABOUT (BIAR NYATU)
 ========================= */
-#About,
-#Project,
-#Contact {
+#About {
+  background-color: #ffffff;
   padding: 5rem 0;
+  overflow: hidden;
+}
+
+#About svg {
+  display: block;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
 }
 
 /* =========================
@@ -32,8 +53,12 @@
 ========================= */
 #Project {
   background-color: #00000069;
+  padding: 5rem 0;
 }
 
+/* =========================
+   CARD
+========================= */
 .card {
   border: none;
   border-radius: 12px;
