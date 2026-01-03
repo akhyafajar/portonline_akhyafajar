@@ -1,18 +1,51 @@
-/* Jumbotron utama */
+/* ===== Jumbotron utama ===== */
 .jumbotron {
   padding-top: 5rem;
   background-color: #00000069;
   color: white;
 }
 
-/* Section yang mau nyamain jumbotron */
+/* ===== Section yang nyamain jumbotron (Project) ===== */
 .jumbotron-like {
   padding-top: 5rem;
   background-color: #00000069;
   color: white;
 }
 
-/* Spasi umum antar section */
+/* ===== Spasi umum antar section ===== */
 section {
   padding-top: 5rem;
+}
+
+/* ===== Project Card Effect (GOYANG HALUS) ===== */
+#Project .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#Project .card:hover {
+  transform: translateY(-12px) rotate(-1deg);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Gambar ikut smooth */
+#Project .card img {
+  transition: transform 0.4s ease;
+}
+
+#Project .card:hover img {
+  transform: scale(1.05);
+}
+
+/* Isi card biar rapi */
+#Project .card-body {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 500;
 }
