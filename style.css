@@ -1,12 +1,18 @@
+/* Jumbotron utama */
 .jumbotron {
   padding-top: 5rem;
   background-color: #00000069;
+  color: white;
 }
 
-#project {
+/* Section yang mau nyamain jumbotron */
+.jumbotron-like {
+  padding-top: 5rem;
   background-color: #00000069;
+  color: white;
 }
 
+/* Spasi umum antar section */
 section {
   padding-top: 5rem;
 }
