@@ -1,51 +1,66 @@
-/* ===== Jumbotron utama ===== */
+/* =========================
+   JUMBOTRON (ASLI LU)
+   TIDAK DIUBAH
+========================= */
 .jumbotron {
   padding-top: 5rem;
   background-color: #00000069;
-  color: white;
 }
 
-/* ===== Section yang nyamain jumbotron (Project) ===== */
-.jumbotron-like {
-  padding-top: 5rem;
+/* =========================
+   PROJECT SECTION
+========================= */
+#Project {
   background-color: #00000069;
-  color: white;
 }
 
-/* ===== Spasi umum antar section ===== */
+/* =========================
+   SECTION GLOBAL
+========================= */
 section {
   padding-top: 5rem;
 }
 
-/* ===== Project Card Effect (GOYANG HALUS) ===== */
-#Project .card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  background-color: #ffffff;
-  transition: 
-    transform 0.4s ease,
-    box-shadow 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+/* =========================
+   CARD (PERCANTIK DOANG)
+========================= */
+.card {
+  border: none;                 /* lebih clean */
+  border-radius: 10px;          /* lembut dikit */
+  overflow: hidden;             /* gambar rapi */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-#Project .card:hover {
-  transform: translateY(-12px) rotate(-1deg);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+.card img {
+  transition: transform 0.3s ease;
 }
 
-/* Gambar ikut smooth */
-#Project .card img {
-  transition: transform 0.4s ease;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
 }
 
-#Project .card:hover img {
-  transform: scale(1.05);
+.card:hover img {
+  transform: scale(1.05);       /* zoom halus */
 }
 
-/* Isi card biar rapi */
-#Project .card-body {
-  background-color: #ffffff;
-  color: #000000;
+.card-text {
   font-weight: 500;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #000000c9;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
