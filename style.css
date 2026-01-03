@@ -1,5 +1,6 @@
+/* ===== JUMBOTRON ===== */
 .jumbotron {
-  padding-top: 5rem;
+  padding-top: 6rem; /* aman dari navbar fixed-top */
   background-color: #00000069;
 }
 
@@ -12,15 +13,14 @@
   font-weight: 600;
 }
 
-
-#Project {
-  background-color: #00000069;
-}
-
-section {
+/* ===== SECTION SPACING ===== */
+#About,
+#Project,
+#Contact {
   padding: 5rem 0;
 }
 
+/* ===== PROJECT CARD ===== */
 .card {
   border: none;
   border-radius: 12px;
@@ -28,14 +28,19 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== PROJECT BACKGROUND ===== */
+#Project {
+  background-color: #00000069;
+}
 
+/* ===== FOOTER ===== */
 footer {
   background-color: #000000c9;
-  color: #fff;
+  color: #ffffff;
 }
 
 footer a {
@@ -46,4 +51,3 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
