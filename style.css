@@ -11,32 +11,3 @@ section {
   padding-top: 5rem;
 }
 
-/* ===== CARD BOX ONLY ===== */
-.card {
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #ffffff;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-  transition: transform 0.3s ease;
-}
-
-.card:hover .card-img-top {
-  transform: scale(1.04);
-}
-
-.card-body {
-  padding: 1rem;
-}
-
-.card-text {
-  font-weight: 500;
-}
