@@ -1,59 +1,40 @@
-/* =========================
-   JUMBOTRON (ASLI LU)
-   TIDAK DIUBAH
-========================= */
 .jumbotron {
   padding-top: 5rem;
   background-color: #00000069;
 }
 
-/* =========================
-   PROJECT SECTION
-========================= */
+.jumbotron img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.jumbotron h1 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+
 #Project {
   background-color: #00000069;
 }
 
-/* =========================
-   SECTION GLOBAL
-========================= */
 section {
-  padding-top: 5rem;
+  padding-top: 5rem 0;
 }
 
-/* =========================
-   CARD (PERCANTIK DOANG)
-========================= */
 .card {
-  border: none;                 /* lebih clean */
-  border-radius: 10px;          /* lembut dikit */
-  overflow: hidden;             /* gambar rapi */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card img {
-  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover img {
-  transform: scale(1.05);       /* zoom halus */
-}
-
-.card-text {
-  font-weight: 500;
-}
-
-/* =========================
-   FOOTER
-========================= */
 footer {
   background-color: #000000c9;
-  color: #ffffff;
+  color: #fff;
 }
 
 footer a {
@@ -64,3 +45,4 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
