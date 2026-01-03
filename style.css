@@ -1,73 +1,51 @@
 /* =========================
-   GLOBAL RESET KECIL
-========================= */
-body {
-  overflow-x: hidden; /* PENTING: cegah scroll horizontal */
-}
-
-/* =========================
-   JUMBOTRON (FIX FULL WIDTH)
+   JUMBOTRON (ASLI LU)
+   TIDAK DIUBAH
 ========================= */
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 5rem;
   background-color: #00000069;
-  position: relative;
-  overflow: hidden; /* POTONG SVG YANG KELUAR */
-}
-
-/* SVG FULL LAYAR */
-.jumbotron svg {
-  display: block;
-  width: 100vw;              /* FULL LAYAR */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;        /* TRIK PALING PENTING */
-  margin-right: -50vw;
-}
-
-/* IMAGE */
-.jumbotron img {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* =========================
-   ABOUT (BIAR NYATU)
-========================= */
-#About {
-  background-color: #ffffff;
-  padding: 5rem 0;
-  overflow: hidden;
-}
-
-#About svg {
-  display: block;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-}
-
-/* =========================
-   PROJECT
+   PROJECT SECTION
 ========================= */
 #Project {
   background-color: #00000069;
-  padding: 5rem 0;
 }
 
 /* =========================
-   CARD
+   SECTION GLOBAL
+========================= */
+section {
+  padding-top: 5rem;
+}
+
+/* =========================
+   CARD (PERCANTIK DOANG)
 ========================= */
 .card {
-  border: none;
-  border-radius: 12px;
+  border: none;                 /* lebih clean */
+  border-radius: 10px;          /* lembut dikit */
+  overflow: hidden;             /* gambar rapi */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.card img {
+  transition: transform 0.3s ease;
+}
+
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);       /* zoom halus */
+}
+
+.card-text {
+  font-weight: 500;
 }
 
 /* =========================
